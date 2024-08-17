@@ -1,0 +1,115 @@
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --gray: hsl(0, 0%, 59%);
+    --blue: hsl(227, 10%, 46%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-cyan);
+    background-image: url('bg-pattern-top.svg'), url('bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position:-45% 300%, 130% -250% ;
+    background-size: auto, auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 25%;
+    
+}
+
+main{
+    position: relative;
+}
+
+.pattern{
+    width: 100%;
+}
+
+.pattern img{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: -5px;
+}
+
+.name{
+    background-color: #fff;
+    text-align: center;
+    padding: 10%;
+}
+
+.name span{
+    color: var(--gray);
+}
+
+.name h3{
+    margin: 1rem 0;
+}
+
+#no{
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.profilepic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.profilepic img{
+    width: 100%;
+    border-radius: 50%;
+    outline: 6px solid #fff;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2rem;
+    border-top: 2px solid rgba(128, 128, 128, 0.151);
+    border-radius:  0 0 2rem 2rem;
+}
+
+footer span{
+    color: gray;
+}
+
+.followerbox, .likebox, .photobox{
+    text-align: center;
+}
+
+@media (max-width : 1300px){
+    .card{
+        width: 50%;
+    }
+}
+@media (max-width : 1000px){
+    .card{
+        width: 60%;
+    }
+}
+@media (max-width : 700px){
+    .card{
+        width: 80%;
+    }
+}
+
+@media (max-width : 425px){
+    .card{
+        width: 100%;
+    }
+}
